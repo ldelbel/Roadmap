@@ -1,0 +1,13 @@
+# Desconsiderando um commit local
+
+Digamos que você fez um commit ainda local, o que significa que você ainda não o enviou ao repositório remoto e deseja desconsiderá-lo.
+
+` git reset HEAD ~ 1`  
+
+Depois de executar este comando, as alterações trazidas pelo commit (agora desconsiderado) voltarão para a área Staging - você pode verificá-lo usando 'status git'. 
+
+Se você quiser desconsiderar completamente as alterações, realmente fazendo com que elas desapareçam, execute o comando usando o parâmetro '--hard':
+
+` git reset --hard HEAD ~ 1`  
+
+Por favor, certifique-se de entender que o uso do argumento --hard desfará completamente as alterações feitas pelo commit.
